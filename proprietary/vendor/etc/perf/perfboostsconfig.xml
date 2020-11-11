@@ -153,16 +153,22 @@
 
 	<!--MTP boost-->
         <!-- SCHEDBOOST resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ PRIME Core resource opcode, value-->
         <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, value-->
         <!-- CPUBOOST_MAX_FREQ LITTLE Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ PRIME Core resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
+        <!-- CPUBW_MIN_FREQ resource opcode, value-->
+        <!-- DISABLE_POWER_COLLAPSE resource opcode, value-->
+        <!-- STORAGE CLK SCALING resource opcode, value-->
 
         <!-- Type="", MTP boost -->
         <Config
             Id="0x00001086" Enable="true" Target="msmnile"
-            Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40800000, 1800,
-                       0x40800100, 1400" />
+            Resources="0x40C00000, 0x1, 0x40804200, 0xFFF, 0x40804000, 0xFFF, 0x40804100, 0xFFF,
+                        0x40800200, 0xFFF, 0x40800000, 0xFFF, 0x40800100, 0xFFF,
+                        0x41800000, 140, 0x40400000, 0x1, 0x42C10000, 0x1" />
 
     <!--Drag boost-->
         <!-- LLCBW_MIN_FREQ resource opcode, value-->

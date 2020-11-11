@@ -1,6 +1,6 @@
 multiCameraEnable=TRUE
-logInfoMask=0
-overrideLogLevels=0x3
+logInfoMask=0x10080
+overrideLogLevels=0x1F
 disablePDAF=FALSE
 disableFocusIndication=1
 enable3ADebugData=FALSE
@@ -26,3 +26,4 @@ tintlessEnable=TRUE
 isDynamicEFL35mmEnabled=TRUE
 numPCRsBeforeStreamOn=0
 sessionFallbackWaitTime=1000
+sessionDumpForFlush=TRUE

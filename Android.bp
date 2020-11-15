@@ -145,9 +145,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "HotwordEnrollmentOKGoogleWCD9340",
+	name: "HotwordEnrollmentOKGoogleHEXAGON",
 	owner: "xiaomi",
-	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk",
+	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -157,9 +157,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "HotwordEnrollmentXGoogleWCD9340",
+	name: "HotwordEnrollmentXGoogleHEXAGON",
 	owner: "xiaomi",
-	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleWCD9340/HotwordEnrollmentXGoogleWCD9340.apk",
+	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,

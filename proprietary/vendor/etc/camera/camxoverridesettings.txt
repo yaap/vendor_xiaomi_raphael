@@ -27,3 +27,4 @@ isDynamicEFL35mmEnabled=TRUE
 numPCRsBeforeStreamOn=0
 sessionFallbackWaitTime=1000
 sessionDumpForFlush=TRUE
+enableTOFInterface=TRUE

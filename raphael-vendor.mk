@@ -835,6 +835,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/libmialgoengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgoengine.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/libmibokeh_855.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmibokeh_855.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/libminkdescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminkdescriptor.so \
+    vendor/xiaomi/raphael/proprietary/vendor/lib64/libminksocket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminksocket.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/libmivendor_module_calibration.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmivendor_module_calibration.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/libmivendor_module_hall.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmivendor_module_hall.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/libmivendor_module_motor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmivendor_module_motor.so \
@@ -924,6 +925,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml2_1.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/libtriplecam_optical_zoom_control.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtriplecam_optical_zoom_control.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/libtriplecam_video_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtriplecam_video_optical_zoom.so \
+    vendor/xiaomi/raphael/proprietary/vendor/lib64/libtrustedapploader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtrustedapploader.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/libvidhance.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/libvpphcp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpphcp.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/libvpphvx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpphvx.so \

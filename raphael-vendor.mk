@@ -118,7 +118,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/raphael/proprietary/vendor/bin/hw/android.hardware.keymaster@4.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.0-service-qti \
     vendor/xiaomi/raphael/proprietary/vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks@1.3-service-qti \
     vendor/xiaomi/raphael/proprietary/vendor/bin/hw/qcrild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qcrild \
-    vendor/xiaomi/raphael/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.display.color@1.0-service \
     vendor/xiaomi/raphael/proprietary/vendor/bin/hw/vendor.qti.esepowermanager@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.esepowermanager@1.1-service \
     vendor/xiaomi/raphael/proprietary/vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.alarm@1.0-service \
     vendor/xiaomi/raphael/proprietary/vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service \
@@ -152,7 +151,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/raphael/proprietary/vendor/bin/pm-service:$(TARGET_COPY_OUT_VENDOR)/bin/pm-service \
     vendor/xiaomi/raphael/proprietary/vendor/bin/port-bridge:$(TARGET_COPY_OUT_VENDOR)/bin/port-bridge \
     vendor/xiaomi/raphael/proprietary/vendor/bin/power_off_alarm:$(TARGET_COPY_OUT_VENDOR)/bin/power_off_alarm \
-    vendor/xiaomi/raphael/proprietary/vendor/bin/ppd:$(TARGET_COPY_OUT_VENDOR)/bin/ppd \
     vendor/xiaomi/raphael/proprietary/vendor/bin/qrtr-cfg:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-cfg \
     vendor/xiaomi/raphael/proprietary/vendor/bin/qrtr-lookup:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-lookup \
     vendor/xiaomi/raphael/proprietary/vendor/bin/qrtr-ns:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-ns \
@@ -285,7 +283,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/raphael/proprietary/vendor/etc/init/qcrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrild.rc \
     vendor/xiaomi/raphael/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
     vendor/xiaomi/raphael/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/xiaomi/raphael/proprietary/vendor/etc/init/vendor.qti.adsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-service.rc \
     vendor/xiaomi/raphael/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
     vendor/xiaomi/raphael/proprietary/vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.esepowermanager@1.1-service.rc \
@@ -356,96 +353,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/config/tcs3701.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/tcs3701.json \
     vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/config/vl53l1_tof_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/vl53l1_tof_0.json \
     vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/descriptor.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/descriptor.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/nanopb.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/nanopb.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/qti_gravity.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/qti_gravity.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_accel.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_accel.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_accel_cal.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_accel_cal.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_activity_recognition.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_activity_recognition.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_ambient_light.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ambient_light.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_ambient_temperature.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ambient_temperature.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_amd.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_amd.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_aont.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_aont.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_async_com_port.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_async_com_port.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_basic_gestures.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_basic_gestures.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_bring_to_ear.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_bring_to_ear.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_cal.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_cal.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_ccd_ttw.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ccd_ttw.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_ccd_walk.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ccd_walk.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_client.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_client.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_cmc.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_cmc.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_cmd.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_cmd.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_da_test.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_da_test.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_dae.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_dae.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_data_acquisition_engine.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_data_acquisition_engine.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_device_mode.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_device_mode.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_device_orient.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_device_orient.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_diag.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_diag.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_diag_sensor.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_diag_sensor.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_distance_bound.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_distance_bound.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_dpc.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_dpc.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_ext_svc.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ext_svc.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_facing.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_facing.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_fmv.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_fmv.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_formatter.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_formatter.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_free_fall.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_free_fall.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_fw.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_fw.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_game_rv.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_game_rv.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_geomag_rv.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_geomag_rv.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_gravity.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_gravity.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_gyro.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_gyro.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_gyro_cal.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_gyro_cal.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_gyro_rot_matrix.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_gyro_rot_matrix.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_hall.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_hall.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_har.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_har.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_heart_beat.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_heart_beat.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_heart_rate.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_heart_rate.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_hinge_angle.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_hinge_angle.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_humidity.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_humidity.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_interrupt.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_interrupt.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_mag.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_mag.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_mag_cal.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_mag_cal.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_mcmd.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_mcmd.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_motion_detect.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_motion_detect.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_multishake.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_multishake.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_oem1.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_oem1.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_oem2.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_oem2.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_oem3.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_oem3.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_offbody_detect.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_offbody_detect.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_pedometer.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_pedometer.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_pedometer_wrist.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_pedometer_wrist.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_physical_sensor_oem_config.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_physical_sensor_oem_config.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_physical_sensor_test.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_physical_sensor_test.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_pose_6dof.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_pose_6dof.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_ppg.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ppg.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_pressure.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_pressure.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_proximity.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_proximity.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_psmd.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_psmd.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_registry.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_registry.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_remote_proc_state.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_remote_proc_state.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_resampler.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_resampler.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_rgb.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_rgb.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_rmd.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_rmd.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_rotv.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_rotv.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_sar.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_sar.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_sensor_temperature.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_sensor_temperature.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_sig_motion.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_sig_motion.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_signal_sensor.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_signal_sensor.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_sim.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_sim.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_sim_legacy.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_sim_legacy.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_std.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_std.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_std_event_gated_sensor.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_std_event_gated_sensor.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_std_sensor.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_std_sensor.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_std_type.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_std_type.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_step_detect.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_step_detect.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_suid.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_suid.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_thermopile.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_thermopile.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_threshold.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_threshold.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_tilt.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_tilt.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_tilt_to_wake.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_tilt_to_wake.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_timer.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_timer.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_ultra_violet.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ultra_violet.proto \
-    vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/proto/sns_wrist_tilt_gesture.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_wrist_tilt_gesture.proto \
     vendor/xiaomi/raphael/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
     vendor/xiaomi/raphael/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
     vendor/xiaomi/raphael/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
@@ -624,6 +531,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/raphael/proprietary/vendor/lib/libqsocket.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqsocket.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqtigef.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib/libqtikeymaster4.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqtikeymaster4.so \
+    vendor/xiaomi/raphael/proprietary/vendor/lib/libresampler.so:$(TARGET_COPY_OUT_VENDOR)/lib/libresampler.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib/libscveCommon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveCommon.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib/libscveCommon_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveCommon_stub.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib/libscveObjectSegmentation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectSegmentation.so \
@@ -1071,6 +979,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/librcc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librcc.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/libremosaic_daemon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaic_daemon.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/libremosaiclib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaiclib.so \
+    vendor/xiaomi/raphael/proprietary/vendor/lib64/libresampler.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libresampler.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/libril-qc-hal-qmi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-hal-qmi.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/libril-qc-logger.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-logger.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/libril-qc-ltedirectdisc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-ltedirectdisc.so \
@@ -1156,13 +1065,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/unnhal-acc-common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unnhal-acc-common.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/unnhal-acc-hta.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unnhal-acc-hta.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/unnhal-acc-hvx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unnhal-acc-hvx.so \
-    vendor/xiaomi/raphael/proprietary/vendor/lib64/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.0.so \
-    vendor/xiaomi/raphael/proprietary/vendor/lib64/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.1.so \
-    vendor/xiaomi/raphael/proprietary/vendor/lib64/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.2.so \
-    vendor/xiaomi/raphael/proprietary/vendor/lib64/vendor.display.color@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.3.so \
-    vendor/xiaomi/raphael/proprietary/vendor/lib64/vendor.display.color@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.4.so \
-    vendor/xiaomi/raphael/proprietary/vendor/lib64/vendor.display.color@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.5.so \
-    vendor/xiaomi/raphael/proprietary/vendor/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.postproc@1.0.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.0.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.1.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/vendor.qti.data.slm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.slm@1.0.so \

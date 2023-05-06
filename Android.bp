@@ -63,16 +63,6 @@ cc_prebuilt_library_shared {
 }
 
 android_app_import {
-	name: "IFAAService",
-	owner: "xiaomi",
-	apk: "proprietary/app/IFAAService/IFAAService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
 	name: "SoterService",
 	owner: "xiaomi",
 	apk: "proprietary/app/SoterService/SoterService.apk",

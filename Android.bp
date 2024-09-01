@@ -109,6 +109,17 @@ android_app_import {
 }
 
 android_app_import {
+	name: "com.qualcomm.qti.gpudrivers.msmnile.api30",
+	owner: "xiaomi",
+	apk: "proprietary/vendor/app/com.qualcomm.qti.gpudrivers.msmnile.api30/com.qualcomm.qti.gpudrivers.msmnile.api30.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
 	name: "PowerOffAlarm",
 	owner: "xiaomi",
 	apk: "proprietary/product/app/PowerOffAlarm/PowerOffAlarm.apk",
@@ -337,7 +348,7 @@ install_symlink {
 install_symlink {
 	name: "libq3dtools_adreno_libq3dtools_adreno_symlink64",
 	soc_specific: true,
-	installed_location: "lib/libq3dtools_adreno.so",
+	installed_location: "lib64/libq3dtools_adreno.so",
 	symlink_target: "/vendor/lib64/egl/libq3dtools_adreno.so",
 }
 

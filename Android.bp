@@ -68,21 +68,21 @@ android_app_import {
 	name: "SoterService",
 	owner: "xiaomi",
 	apk: "proprietary/app/SoterService/SoterService.apk",
-	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
+	certificate: "platform",
 }
 
 android_app_import {
 	name: "CneApp",
 	owner: "xiaomi",
 	apk: "proprietary/vendor/app/CneApp/CneApp.apk",
-	required: ["CneApp.libvndfwk_detect_jni.qti_symlink"],
-	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
+	required: ["CneApp.libvndfwk_detect_jni.qti_symlink"],
+	certificate: "platform",
 	soc_specific: true,
 }
 
@@ -90,10 +90,10 @@ android_app_import {
 	name: "IWlanService",
 	owner: "xiaomi",
 	apk: "proprietary/vendor/app/IWlanService/IWlanService.apk",
-	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
+	certificate: "platform",
 	soc_specific: true,
 }
 
@@ -101,10 +101,10 @@ android_app_import {
 	name: "TimeService",
 	owner: "xiaomi",
 	apk: "proprietary/vendor/app/TimeService/TimeService.apk",
-	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
+	certificate: "platform",
 	soc_specific: true,
 }
 
@@ -112,10 +112,10 @@ android_app_import {
 	name: "PowerOffAlarm",
 	owner: "xiaomi",
 	apk: "proprietary/product/app/PowerOffAlarm/PowerOffAlarm.apk",
-	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
+	certificate: "platform",
 	product_specific: true,
 }
 
@@ -123,10 +123,10 @@ android_app_import {
 	name: "HotwordEnrollmentOKGoogleHEXAGON",
 	owner: "xiaomi",
 	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk",
-	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
+	certificate: "platform",
 	privileged: true,
 	product_specific: true,
 }
@@ -135,10 +135,10 @@ android_app_import {
 	name: "HotwordEnrollmentXGoogleHEXAGON",
 	owner: "xiaomi",
 	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk",
-	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
+	certificate: "platform",
 	privileged: true,
 	product_specific: true,
 }
@@ -147,10 +147,10 @@ android_app_import {
 	name: "QtiTelephonyService",
 	owner: "xiaomi",
 	apk: "proprietary/system_ext/app/QtiTelephonyService/QtiTelephonyService.apk",
-	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
+	certificate: "platform",
 	system_ext_specific: true,
 }
 
@@ -158,10 +158,10 @@ android_app_import {
 	name: "dpmserviceapp",
 	owner: "xiaomi",
 	apk: "proprietary/system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk",
-	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
+	certificate: "platform",
 	privileged: true,
 	system_ext_specific: true,
 }
@@ -170,10 +170,10 @@ android_app_import {
 	name: "ims",
 	owner: "xiaomi",
 	apk: "proprietary/system_ext/priv-app/ims/ims.apk",
-	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
+	certificate: "platform",
 	privileged: true,
 	system_ext_specific: true,
 }
@@ -182,10 +182,10 @@ android_app_import {
 	name: "qcrilmsgtunnel",
 	owner: "xiaomi",
 	apk: "proprietary/system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
-	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
+	certificate: "platform",
 	privileged: true,
 	system_ext_specific: true,
 }
@@ -314,6 +314,13 @@ install_symlink {
 }
 
 install_symlink {
+	name: "libVkLayer_ADRENO_qprofiler_libVkLayer_ADRENO_qprofiler_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libVkLayer_ADRENO_qprofiler.so",
+	symlink_target: "/vendor/lib/egl/libVkLayer_ADRENO_qprofiler.so",
+}
+
+install_symlink {
 	name: "libq3dtools_adreno_libq3dtools_adreno_symlink32",
 	soc_specific: true,
 	installed_location: "lib/libq3dtools_adreno.so",
@@ -335,9 +342,16 @@ install_symlink {
 }
 
 install_symlink {
+	name: "libVkLayer_ADRENO_qprofiler_libVkLayer_ADRENO_qprofiler_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libVkLayer_ADRENO_qprofiler.so",
+	symlink_target: "/vendor/lib64/egl/libVkLayer_ADRENO_qprofiler.so",
+}
+
+install_symlink {
 	name: "libq3dtools_adreno_libq3dtools_adreno_symlink64",
 	soc_specific: true,
-	installed_location: "lib/libq3dtools_adreno.so",
+	installed_location: "lib64/libq3dtools_adreno.so",
 	symlink_target: "/vendor/lib64/egl/libq3dtools_adreno.so",
 }
 

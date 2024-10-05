@@ -291,6 +291,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/raphael/proprietary/vendor/firmware/a640_zap.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/a640_zap.b02 \
     vendor/xiaomi/raphael/proprietary/vendor/firmware/a640_zap.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/a640_zap.elf \
     vendor/xiaomi/raphael/proprietary/vendor/firmware/a640_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/a640_zap.mdt \
+    vendor/xiaomi/raphael/proprietary/vendor/firmware/a650_gmu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/a650_gmu.bin \
+    vendor/xiaomi/raphael/proprietary/vendor/firmware/a650_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a650_sqe.fw \
+    vendor/xiaomi/raphael/proprietary/vendor/firmware/a650_zap.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/a650_zap.elf \
     vendor/xiaomi/raphael/proprietary/vendor/firmware/ipa_fws.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b00 \
     vendor/xiaomi/raphael/proprietary/vendor/firmware/ipa_fws.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b01 \
     vendor/xiaomi/raphael/proprietary/vendor/firmware/ipa_fws.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b02 \
@@ -308,19 +311,14 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/raphael/proprietary/vendor/gpu/kbc/unified_kbcs_32.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_32.bin \
     vendor/xiaomi/raphael/proprietary/vendor/gpu/kbc/unified_kbcs_64.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_64.bin \
     vendor/xiaomi/raphael/proprietary/vendor/gpu/kbc/unified_ksqs.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_ksqs.bin \
-    vendor/xiaomi/raphael/proprietary/vendor/lib/camera.device@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@1.0-impl.so \
-    vendor/xiaomi/raphael/proprietary/vendor/lib/camera.device@3.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.2-impl.so \
-    vendor/xiaomi/raphael/proprietary/vendor/lib/camera.device@3.3-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.3-impl.so \
-    vendor/xiaomi/raphael/proprietary/vendor/lib/camera.device@3.4-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.4-impl.so \
-    vendor/xiaomi/raphael/proprietary/vendor/lib/camera.device@3.5-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.5-impl.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/eglSubDriverAndroid.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib/egl/libEGL_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libEGL_adreno.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLESv1_CM_adreno.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib/egl/libGLESv2_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLESv2_adreno.so \
+    vendor/xiaomi/raphael/proprietary/vendor/lib/egl/libVkLayer_ADRENO_qprofiler.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libVkLayer_ADRENO_qprofiler.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib/egl/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libq3dtools_adreno.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib/egl/libq3dtools_esx.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libq3dtools_esx.so \
-    vendor/xiaomi/raphael/proprietary/vendor/lib/egl/libVkLayer_ADRENO_qprofiler.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libVkLayer_ADRENO_qprofiler.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib/hw/android.hardware.gnss@2.1-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gnss@2.1-impl-qti.so \
@@ -506,15 +504,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/raphael/proprietary/vendor/lib/vendor.qti.hardware.audiohalext@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.audiohalext@1.0.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.bluetooth_sar@1.0.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.bluetooth_sar@1.1.so \
-    vendor/xiaomi/raphael/proprietary/vendor/lib/vendor.qti.hardware.camera.device@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.camera.device@2.0.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib/vendor.qti.hardware.dsp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.dsp@1.0.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib/vndk/libxlog.so:$(TARGET_COPY_OUT_VENDOR)/lib/vndk/libxlog.so \
-    vendor/xiaomi/raphael/proprietary/vendor/lib64/android.hardware.camera.provider@2.4-legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.provider@2.4-legacy.so \
-    vendor/xiaomi/raphael/proprietary/vendor/lib64/camera.device@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@1.0-impl.so \
-    vendor/xiaomi/raphael/proprietary/vendor/lib64/camera.device@3.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.2-impl.so \
-    vendor/xiaomi/raphael/proprietary/vendor/lib64/camera.device@3.3-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.3-impl.so \
-    vendor/xiaomi/raphael/proprietary/vendor/lib64/camera.device@3.4-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.4-impl.so \
-    vendor/xiaomi/raphael/proprietary/vendor/lib64/camera.device@3.5-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.5-impl.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/camera/com.qti.sensor.imx586_raphael.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.imx586_raphael.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/camera/com.qti.sensor.ov8856_raphael.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.ov8856_raphael.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/camera/com.qti.sensor.s5k3l6_raphael.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.s5k3l6_raphael.so \
@@ -615,9 +606,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/egl/libEGL_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libEGL_adreno.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/egl/libGLESv1_CM_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLESv1_CM_adreno.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/egl/libGLESv2_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLESv2_adreno.so \
+    vendor/xiaomi/raphael/proprietary/vendor/lib64/egl/libVkLayer_ADRENO_qprofiler.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libVkLayer_ADRENO_qprofiler.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/egl/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libq3dtools_adreno.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/egl/libq3dtools_esx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libq3dtools_esx.so \
-    vendor/xiaomi/raphael/proprietary/vendor/lib64/egl/libVkLayer_ADRENO_qprofiler.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libVkLayer_ADRENO_qprofiler.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss@2.1-impl-qti.so \
@@ -974,8 +965,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/vendor.qti.hardware.cacert@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.cacert@1.0.so \
-    vendor/xiaomi/raphael/proprietary/vendor/lib64/vendor.qti.hardware.camera.device@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.device@2.0.so \
-    vendor/xiaomi/raphael/proprietary/vendor/lib64/vendor.qti.hardware.camera.device@3.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.device@3.5.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so \
@@ -1084,7 +1073,9 @@ PRODUCT_PACKAGES += \
     libimsmedia_jni_libimsmedia_jni_symlink64 \
     libEGL_adreno_libEGL_adreno_symlink32 \
     libGLESv2_adreno_libGLESv2_adreno_symlink32 \
+    libVkLayer_ADRENO_qprofiler_libVkLayer_ADRENO_qprofiler_symlink32 \
     libq3dtools_adreno_libq3dtools_adreno_symlink32 \
     libEGL_adreno_libEGL_adreno_symlink64 \
     libGLESv2_adreno_libGLESv2_adreno_symlink64 \
+    libVkLayer_ADRENO_qprofiler_libVkLayer_ADRENO_qprofiler_symlink64 \
     libq3dtools_adreno_libq3dtools_adreno_symlink64

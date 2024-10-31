@@ -399,7 +399,6 @@ PRODUCT_PACKAGES += \
     libssrec \
     libstagefright_soft_qtiflacdec \
     libsysmon_cdsp_skel \
-    libthermalclient \
     libtrustedapploader \
     libvppclient \
     libvpphcp \
@@ -665,6 +664,7 @@ PRODUCT_PACKAGES += \
     libssd \
     libswregistrationalgo \
     libsystem_health_mon \
+    libthermalclient \
     libtime_genoff \
     libtinyxml2_1 \
     libtriplecam_optical_zoom_control \

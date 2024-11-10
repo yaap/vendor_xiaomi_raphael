@@ -1167,6 +1167,7 @@ cc_prebuilt_library_shared {
 		},
 	},
 	compile_multilib: "both",
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -4415,7 +4416,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/camera/components/com.qti.node.watermark.so"],
-			shared_libs: ["libwatermark_shim", "libwatermark_shim", "libcutils", "libutils", "libcamera_metadata", "libcom.qti.chinodeutils", "libjpeg", "libpng", "libz", "libpiex", "libexpat", "libdng_sdk", "libEGL", "libGLESv2", "libnativewindow", "libft2vendor", "liblog", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libpiex_shim", "libcutils", "libutils", "libcamera_metadata", "libcom.qti.chinodeutils", "libjpeg", "libpng", "libz", "libpiex", "libexpat", "libdng_sdk", "libEGL", "libGLESv2", "libnativewindow", "libft2vendor", "liblog", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",

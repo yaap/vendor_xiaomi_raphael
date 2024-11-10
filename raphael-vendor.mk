@@ -279,6 +279,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.capabilityconfigstore@1.0-impl \
     vendor.xiaomi.hardware.motor@1.0-impl \
     vulkan.adreno \
+    libC2D2 \
     libCB \
     libI420colorconvert \
     libOmxAacDec \
@@ -310,6 +311,7 @@ PRODUCT_PACKAGES += \
     libbatching \
     libbt-hidlclient \
     libbtnv \
+    libc2d30_bltlib \
     libcamera_nn_stub \
     libcamxfdalgov7 \
     libcamxfdalgov8 \

@@ -282,16 +282,6 @@ PRODUCT_PACKAGES += \
     libC2D2 \
     libCB \
     libI420colorconvert \
-    libOmxAacDec \
-    libOmxAlacDec \
-    libOmxAmrDec \
-    libOmxAmrwbplusDec \
-    libOmxApeDec \
-    libOmxEvrcDec \
-    libOmxG711Dec \
-    libOmxQcelp13Dec \
-    libOmxVpp \
-    libOmxWmaDec \
     libOpenCL \
     libOpenCL_adreno \
     libQSEEComAPI \
@@ -425,9 +415,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vpp@1.1 \
     vendor.qti.hardware.vpp@1.2 \
     vendor.qti.hardware.vpp@1.3 \
-    libOmxAlacDecSw \
-    libOmxDsdDec \
-    libOmxVideoDSMode \
     libadm \
     libadpcmdec \
     libcppf \

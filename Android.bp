@@ -2180,6 +2180,27 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libqcodec2",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libqcodec2.so"],
+			shared_libs: ["libutils", "libcutils", "liblog", "libcodec2_vndk", "libqdMetaData", "libhidlbase", "android.hardware.graphics.mapper@3.0", "libc++", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libqcodec2.so"],
+			shared_libs: ["libutils", "libcutils", "liblog", "libcodec2_vndk", "libqdMetaData", "libhidlbase", "android.hardware.graphics.mapper@3.0", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libqdi",
 	owner: "xiaomi",
 	strip: {
@@ -10377,6 +10398,24 @@ cc_prebuilt_binary {
 		},
 	},
 	compile_multilib: "64",
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	relative_install_path: "hw",
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "vendor.qti.media.c2@1.0-service",
+	owner: "xiaomi",
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/bin/hw/vendor.qti.media.c2@1.0-service"],
+			shared_libs: ["libqcodec2", "android.hardware.media.c2@1.0", "android.hardware.media.omx@1.0", "liblog", "libcutils", "libavservices_minijail", "libbinder", "libhidlbase", "libcodec2_vndk", "libstagefright_omx", "libstagefright_xmlparser", "libutils", "libvndksupport", "libcodec2_hidl@1.0", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "32",
 	strip: {
 		none: true,
 	},

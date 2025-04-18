@@ -440,7 +440,6 @@ PRODUCT_PACKAGES += \
     libmmrtpdecoder_proprietary \
     libmmrtpencoder_proprietary \
     libsmwrapper \
-    libsn100u_fw \
     libwfdcodecv4l2_proprietary \
     libwfdcommonutils_proprietary \
     libwfdconfigutils_proprietary \
@@ -680,6 +679,7 @@ PRODUCT_PACKAGES += \
     libsettings \
     libsi \
     libslimclient \
+    libsn100u_fw \
     libsnpe_dsp_domains_v2 \
     libsns_device_mode_stub \
     libsns_fastRPC_util \

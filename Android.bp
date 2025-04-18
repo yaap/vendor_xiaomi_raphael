@@ -3556,23 +3556,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libsn100u_fw",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib/libsn100u_fw.so"],
-			shared_libs: [ ],
-		},
-	},
-	compile_multilib: "32",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libwfdcodecv4l2_proprietary",
 	owner: "xiaomi",
 	strip: {
@@ -7710,6 +7693,23 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libslimclient.so"],
 			shared_libs: ["libutils", "libgps.utils", "liblog", "libqmi_cci", "libqmi_common_so", "libqmi_encdec", "libdiag", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libsn100u_fw",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libsn100u_fw.so"],
+			shared_libs: [ ],
 		},
 	},
 	compile_multilib: "64",

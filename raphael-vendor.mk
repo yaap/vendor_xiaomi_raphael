@@ -344,6 +344,7 @@ PRODUCT_PACKAGES += \
     libgeofencing \
     libgnss \
     libgps.utils \
+    libgpudataproducer \
     libgsl \
     libidl \
     libkcl \

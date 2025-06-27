@@ -237,6 +237,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/raphael/proprietary/vendor/firmware/ipa_uc.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_uc.elf \
     vendor/xiaomi/raphael/proprietary/vendor/firmware/ipa_uc.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_uc.mdt \
     vendor/xiaomi/raphael/proprietary/vendor/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa98xx.cnt \
+    vendor/xiaomi/raphael/proprietary/vendor/gpu/kbc/sequence_manifest.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/sequence_manifest.bin \
+    vendor/xiaomi/raphael/proprietary/vendor/gpu/kbc/unified_kbcs_32.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_32.bin \
+    vendor/xiaomi/raphael/proprietary/vendor/gpu/kbc/unified_kbcs_64.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_64.bin \
+    vendor/xiaomi/raphael/proprietary/vendor/gpu/kbc/unified_ksqs.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_ksqs.bin \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/camera/com.qti.sensormodule.raphael_luxvisions_imx586.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.raphael_luxvisions_imx586.bin \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/camera/com.qti.sensormodule.raphael_luxvisions_ov8856.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.raphael_luxvisions_ov8856.bin \
     vendor/xiaomi/raphael/proprietary/vendor/lib64/camera/com.qti.sensormodule.raphael_luxvisions_s5k3l6.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.raphael_luxvisions_s5k3l6.bin \
@@ -279,7 +283,6 @@ PRODUCT_PACKAGES += \
     libEGL_adreno \
     libGLESv1_CM_adreno \
     libGLESv2_adreno \
-    libVkLayer_ADRENO_qprofiler \
     libq3dtools_adreno \
     libq3dtools_esx \
     android.hardware.bluetooth@1.0-impl-qti \
@@ -299,8 +302,8 @@ PRODUCT_PACKAGES += \
     libCB \
     libI420colorconvert \
     libOpenCL \
-    libOpenCL_adreno \
     libQSEEComAPI \
+    libVkLayer_q3dtools \
     libacdb-fts \
     libacdbloader \
     libacdbrtac \
@@ -358,7 +361,6 @@ PRODUCT_PACKAGES += \
     liblistensoundmodel2 \
     libllvm-glnext \
     libllvm-qcom \
-    libllvm-qgl \
     libloc_core \
     liblocation_api \
     libmdmdetect \
@@ -434,6 +436,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vpp@1.1 \
     vendor.qti.hardware.vpp@1.2 \
     vendor.qti.hardware.vpp@1.3 \
+    vendor.qti.qspmhal@1.0_vendor \
     libFileMux_proprietary \
     libadm \
     libadpcmdec \
@@ -968,9 +971,9 @@ PRODUCT_PACKAGES += \
     system_ext_priv-app_WfdService_lib_arm64_libwfdnative_so \
     system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so \
     system_ext_priv-app_ims_lib_arm64_libimsmedia_jni_so \
+    vendor_lib_libEGL_adreno_so \
     vendor_lib_libGLESv2_adreno_so \
-    vendor_lib_libVkLayer_ADRENO_qprofiler_so \
     vendor_lib_libq3dtools_adreno_so \
+    vendor_lib64_libEGL_adreno_so \
     vendor_lib64_libGLESv2_adreno_so \
-    vendor_lib64_libVkLayer_ADRENO_qprofiler_so \
     vendor_lib64_libq3dtools_adreno_so

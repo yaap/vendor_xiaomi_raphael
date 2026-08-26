@@ -17918,17 +17918,6 @@ android_app_import {
 }
 
 android_app_import {
-    name: "DeviceInfo",
-    owner: "xiaomi",
-    apk: "proprietary/system_ext/app/DeviceInfo/DeviceInfo.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    system_ext_specific: true,
-}
-
-android_app_import {
     name: "ImsRcsService",
     owner: "xiaomi",
     apk: "proprietary/system_ext/app/ImsRcsService/ImsRcsService.apk",
@@ -18082,15 +18071,6 @@ dex_import {
     owner: "xiaomi",
     jars: [
         "proprietary/system_ext/framework/qcrilhook.jar",
-    ],
-    system_ext_specific: true,
-}
-
-dex_import {
-    name: "qti-telephony-common",
-    owner: "xiaomi",
-    jars: [
-        "proprietary/system_ext/framework/qti-telephony-common.jar",
     ],
     system_ext_specific: true,
 }

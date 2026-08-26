@@ -832,7 +832,6 @@ PRODUCT_PACKAGES += \
     TimeService \
     HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND \
     HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
-    DeviceInfo \
     ImsRcsService \
     PowerOffAlarm \
     QtiTelephonyService \
@@ -849,7 +848,6 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.uceservice-V2.1-java \
     dpmapi \
     qcrilhook \
-    qti-telephony-common \
     vendor.qti.ims.callcapability-V1.0-java \
     vendor.qti.ims.callinfo-V1.0-java \
     vendor.qti.ims.connection-V1.0-java \
